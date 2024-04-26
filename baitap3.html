@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<h1>in ra  cac so chia het cho 3</h1>
+nhap a
+<input type="number" id="so dau" placeholder="nhap a vao"><br><br>
+nhap b
+<input type="number" id="so thu hai" placeholder="nhap b vao">
+<button onclick="hihi()">tim kiem</button>
+<p id="ket qua"></p>
+<script>
+    function hihi(){
+        let a = +document.getElementById('so dau').value;
+        let b = +document.getElementById('so thu hai').value;
+        let c = 0;
+        for (let i = a; i <= b; i++) {
+            if(i > 10 && i % 3 === 0){
+                c += '<p>' + i + '</p>'
+            }
+        }
+        document.getElementById('ket qua').innerHTML = 'cac so chia het cho 3 la: ' + c
+    }
+</script>
+</body>
+</html>
